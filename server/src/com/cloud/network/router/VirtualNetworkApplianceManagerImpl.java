@@ -1648,6 +1648,9 @@ public class VirtualNetworkApplianceManagerImpl extends ManagerBase implements V
                 case LXC:
                     templateName = RouterTemplateLxc.valueIn(dest.getDataCenter().getId());
                     break;
+                case Docker:
+                    templateName = RouterTemplateDocker.valueIn(dest.getDataCenter().getId());
+                    break;
                 default:
                     break;
                 }

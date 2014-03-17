@@ -50,6 +50,7 @@ public interface VirtualNetworkApplianceManager extends Manager, VirtualNetworkA
     static final String RouterTemplateVmwareCK = "router.template.vmware";
     static final String RouterTemplateHyperVCK = "router.template.hyperv";
     static final String RouterTemplateLxcCK = "router.template.lxc";
+    static final String RouterTemplateDockerCK = "router.template.docker";    
     static final String SetServiceMonitorCK = "network.router.EnableServiceMonitoring";
 
     static final ConfigKey<String> RouterTemplateXen = new ConfigKey<String>(String.class, RouterTemplateXenCK, "Advanced", "SystemVM Template (XenServer)",
@@ -61,7 +62,9 @@ public interface VirtualNetworkApplianceManager extends Manager, VirtualNetworkA
     static final ConfigKey<String> RouterTemplateHyperV = new ConfigKey<String>(String.class, RouterTemplateHyperVCK, "Advanced", "SystemVM Template (HyperV)",
         "Name of the default router template on Hyperv.", true, ConfigKey.Scope.Zone, null);
     static final ConfigKey<String> RouterTemplateLxc = new ConfigKey<String>(String.class, RouterTemplateLxcCK, "Advanced", "SystemVM Template (LXC)",
-        "Name of the default router template on LXC.", true, ConfigKey.Scope.Zone, null);
+            "Name of the default router template on LXC.", true, ConfigKey.Scope.Zone, null);
+    static final ConfigKey<String> RouterTemplateDocker = new ConfigKey<String>(String.class, RouterTemplateDockerCK, "Advanced", "SystemVM Template (Docker)",
+            "Name of the default router template on Docker.", true, ConfigKey.Scope.Zone, null);
 
     static final ConfigKey<String> SetServiceMonitor = new ConfigKey<String>(String.class, SetServiceMonitorCK, "Advanced", "true",
             "service monitoring in router enable/disable option, default true", true, ConfigKey.Scope.Zone, null);

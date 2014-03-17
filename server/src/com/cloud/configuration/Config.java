@@ -716,7 +716,7 @@ public enum Config {
             String.class,
             "system.vm.default.hypervisor",
             null,
-            "Hypervisor type used to create system vm, valid values are: XenServer, KVM, VMware, Hyperv, VirtualBox, Parralels, BareMetal, Ovm, LXC, Any",
+            "Hypervisor type used to create system vm, valid values are: XenServer, KVM, VMware, Hyperv, VirtualBox, Parralels, BareMetal, Ovm, LXC, Docker, Any",
             null),
     SystemVMRandomPassword(
             "Advanced",
@@ -733,7 +733,7 @@ public enum Config {
             String.class,
             "hypervisor.list",
             HypervisorType.Hyperv + "," + HypervisorType.KVM + "," + HypervisorType.XenServer + "," + HypervisorType.VMware + "," + HypervisorType.BareMetal + "," +
-                HypervisorType.Ovm + "," + HypervisorType.LXC,
+                HypervisorType.Ovm + "," + HypervisorType.LXC + "," + HypervisorType.Docker,
             "The list of hypervisors that this deployment will use.",
             "hypervisorList"),
     ManagementNetwork("Advanced", ManagementServer.class, String.class, "management.network.cidr", null, "The cidr of management server network", null),

@@ -748,6 +748,9 @@ public class InternalLoadBalancerVMManagerImpl extends ManagerBase implements In
                     case LXC:
                         templateName = VirtualNetworkApplianceManager.RouterTemplateLxc.valueIn(dest.getDataCenter().getId());
                         break;
+                    case Docker:
+                        templateName = VirtualNetworkApplianceManager.RouterTemplateDocker.valueIn(dest.getDataCenter().getId());
+                        break;
                     default:
                         break;
                 }
